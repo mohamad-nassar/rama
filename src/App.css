@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a.nav-link
+{
   color: white;
+  margin: 0 20px;
+}
+a.nav-link.active, a.nav-link:hover
+{
+  color: aqua !important;
+  border-top: 3px solid aqua;
+}
+.title
+{
+  margin: 20px;
+  display: inline-block;
+}
+p.text-aqua
+{
+  color: aqua !important;
 }
 
-.App-link {
-  color: #61dafb;
+.word {
+  display:inline-flex;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.word-1 {
+  color: aqua !important;
+}
+@media only screen and (max-width: 480px) {
+  .word {
+    display:block !important;
+    font-weight: 400;
+    font-size: 20px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .w-2 {
+    display:block !important;
+    font-weight: 400;
+    font-size: 20px !important;
   }
+  .hrtitle
+{
+  border: none;
+  height: 4px;
+  background-color: aqua;
+  width: 100px !important;
+}
+}
+.hrtitle
+{
+  border: none;
+  height: 4px;
+  background-color: aqua;
+  width: 350px;
+}
+.btn-primary
+{
+  background-color: aqua !important;
+  color: white !important;
+  width: 200px;
+}
+.btn-outline-primary
+{
+  border-color: aqua !important;
+  color: aqua !important;
+  width: 200px;
+}
+.btn-outline-primary:hover
+{
+  background-color: aqua !important;
+  color: white !important;
+}
+button.navbar-toggler 
+{
+  border: 0 !important;
+  outline: none !important;
+  background-color: white;
+}
+span.navbar-toggler-icon
+{
+  color: white !important;
 }
